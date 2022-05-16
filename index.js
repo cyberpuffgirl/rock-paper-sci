@@ -36,10 +36,10 @@ function makeMove(playerTurn, cpuTurn) {
         } else {
             console.log(win);
         }
-    } else if (playerTurn === '' || playerTurn === null) {
-        alert('cancelled');
+    } else if (playerTurn === '' || playerTurn === null) { // Will need to edit this later to have the loop break if one of these answers is provided. 
+        console.log('Cancelled');
     } else {
-        console.log('That is not a valid option');
+        console.log('That is not a valid option.', lose);
     }
 }
 
