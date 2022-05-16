@@ -18,6 +18,8 @@ function makeMove(playerTurn, cpuTurn) {
 
     if (playerTurn === 'rock' && cpuTurn === 'paper' || playerTurn === 'paper' && cpuTurn === 'scissor' || playerTurn === 'scissor' && cpuTurn === 'rock') {
         return console.log('You lose!');
+    } else if (playerTurn != 'rock' || playerTurn != 'paper' || playerTurn != 'scissor') {
+        console.log('Invalid move. Pls input rock, paper or scissor')
     } else {
         return console.log('You win!');
     }
