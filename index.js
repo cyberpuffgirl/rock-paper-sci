@@ -15,13 +15,31 @@ function cpuPlays() {
 // Below is the function for the player input, and what the results will be once calculated with the cpu input. 
 
 function makeMove(playerTurn, cpuTurn) {
+    let lose = 'You lose!'
+    let win = 'You win!!'
 
-    if (playerTurn === 'rock' && cpuTurn === 'paper' || playerTurn === 'paper' && cpuTurn === 'scissor' || playerTurn === 'scissor' && cpuTurn === 'rock') {
-        return console.log('You lose!');
-    } else if (playerTurn != 'rock' || playerTurn != 'paper' || playerTurn != 'scissor') {
-        console.log('Invalid move. Pls input rock, paper or scissor')
+    if (playerTurn === 'rock' || playerTurn === 'Rock') {
+        if (cpuTurn === 'paper') {
+            console.log(lose);
+        } else {
+            console.log(win);
+        }
+    } else if (playerTurn === 'paper' || playerTurn === 'Paper') {
+        if (cpuTurn === 'scissor') {
+            console.log(lose);
+        } else {
+            console.log(win);
+        }
+    } else if (playerTurn === 'scissor' || playerTurn === 'Scissor') {
+        if (cpuTurn === 'rock') {
+            console.log(lose);
+        } else {
+            console.log(win);
+        }
+    } else if (playerTurn === '' || playerTurn === null) {
+        alert('cancelled');
     } else {
-        return console.log('You win!');
+        console.log('That is not a valid option');
     }
 }
 
