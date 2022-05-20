@@ -22,7 +22,7 @@ function cpuPlays() {
     }
 }
 
-//Below is the function for the player input and cpu input. The result of the round will either return humanRound for a human win or cpuRound for a cpu win. 
+//Below is the function for the player input and cpu input. The variable humanRound will determine if the human player won or lost the round. 
 
 function makeMove(playerTurn, cpuTurn) {
     let humanRound = true; 
