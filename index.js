@@ -1,6 +1,6 @@
 // NOTES FOR PROGRAMMER: 
-// Edit makeMove function so that the game ends when the player hits 'cancelled' button. 
-// Edit game() function so that the loops breaks if the cpu or player hits 3 points before the 5 rounds are over. 
+// Edit makeMove function so that the game ends when the player hits 'cancelled' button... 
+// Edit game() function so that the loops breaks if the cpu or player hits 3 points before the 5 rounds are over... 
 
 
 // GAME INSTRUCTIONS: 
