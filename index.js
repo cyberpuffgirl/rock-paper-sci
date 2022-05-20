@@ -43,13 +43,13 @@ function makeMove(playerTurn, cpuTurn) {
 }
 
 
-//Below is a loop so there can be 5 rounds of the game
+//Below is a function that will play 5 rounds of the game, and determine the overall winner at the end. 
 
 function game() {
     let humanScore = 0;
 
    for (var i = 0; i < 5; i++) {
-    let round = makeMove(prompt('Make your move! Rock, paper or scissor?'), cpuPlays());
+    let round = makeMove(prompt('We\'re playing 5 rounds of rock, paper, scissor. Make your move! Rock, paper or scissor?'), cpuPlays());
 
     if (round === true) {
         console.log('Human wins round!' + ' ' + 'Your score:' + ' ' + ++humanScore);
