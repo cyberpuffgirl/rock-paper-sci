@@ -1,3 +1,8 @@
+// NOTES FOR PROGRAMMER: 
+// Edit makeMove function so that the game ends when the player hits 'cancelled' button. 
+// Edit game() function so that the loops breaks if the cpu or player hits 3 points before the 5 rounds are over. 
+
+
 // GAME INSTRUCTIONS: 
 // The game is set up to play through the console for now. Call the function game() in your console and follow the prompts. 
 // The console will report the winners of each round and the overall winner at the end.
@@ -40,8 +45,6 @@ function makeMove(playerTurn, cpuTurn) {
         } else {
             return humanRound;
         }
-    } else if (playerTurn === '' || playerTurn === null) { // Will need to edit this later to have the loop break if one of these answers is provided. 
-        console.log('Cancelled');
     } else {
         return humanRound = false;
     };
