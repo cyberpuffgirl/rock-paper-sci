@@ -52,10 +52,16 @@ function game() {
     let round = makeMove(prompt('Make your move! Rock, paper or scissor?'), cpuPlays());
 
     if (round === true) {
-        console.log('Human wins!' + ' ' + 'Your score:' + ' ' + ++humanScore);
+        console.log('Human wins round!' + ' ' + 'Your score:' + ' ' + ++humanScore);
     } else {
-        console.log('CPU wins!');
+        console.log('CPU wins round!');
     }
-    };  
+    };
+
+    if (humanScore >= 3) {
+        console.log('Human wins game!!!');
+    } else {
+        console.log('CPU beats human!!');
+    };
 }
 
