@@ -1,3 +1,8 @@
+// GAME INSTRUCTIONS: 
+// The game is set up to play through the console for now. Call the function game() in your console and follow the prompts. 
+// The console will report the winners of each round and the overall winner at the end.
+
+
 //Below is the function for the cpu to make its move. 
 
 function cpuPlays() {
