@@ -52,8 +52,9 @@ function makeMove(playerTurn, cpuTurn) {
 
 
 //Below is a function that will play 5 rounds of the game, and determine the overall winner at the end. 
+//Commenting out the function for 5 rounds while the UI is built. 
 
-function game() {
+/* function game() {
     let humanScore = 0;
 
    for (var i = 0; i < 5; i++) {
@@ -71,5 +72,5 @@ function game() {
     } else {
         console.log('CPU beats human!!');
     };
-} //temp test 2
+} */ 
 
