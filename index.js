@@ -71,5 +71,5 @@ function game() {
     } else {
         console.log('CPU beats human!!');
     };
-} //temp
+} //temp test 2
 
