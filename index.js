@@ -19,14 +19,26 @@ selections.forEach(function (button) {
 // const win = 'Human wins!'
 // const lose = 'Human loses!'
 
+const rock = document.querySelector('#rock'); 
+const paper = document.querySelector('#paper');
+const scissor = document.querySelector('#scissor');
+
 function cpuPlays() {
     const move = Math.floor(Math.random() * 3) + 1;
 
     if (move === 1) {
+<<<<<<< HEAD
         return alert('rock');
     } else if (move === 2) {
         return alert('paper');
     } else {
         return alert('scissor');
+=======
+        return rock;
+    } else if (move === 2) {
+        return paper;
+    } else {
+        return scissor;
+>>>>>>> de5b5bdcc66aff85303649a6564a89bfaa06d32e
     }
 }
